@@ -40,6 +40,16 @@
     <Compile Include="Constants.cs" />
     <Compile Include="TodoItem.cs" />
     <Compile Include="TodoItemManager.cs" />
+    <Compile Include="Views\AuthPage.xaml.cs">
+      <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserDetails.cs" />
+    <Compile Include="Views\MessageListPage.cs" />
+    <Compile Include="Views\BaseContentPage.cs" />
+    <Compile Include="Views\LoginPage.cs" />
+    <Compile Include="Credentials.cs" />
+    <Compile Include="Services\TwitterService.cs" />
+    <Compile Include="Models\Message.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -49,5 +59,13 @@
     <EmbeddedResource Include="TodoList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AuthPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
