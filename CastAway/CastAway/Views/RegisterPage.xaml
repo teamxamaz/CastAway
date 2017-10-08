@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    Title="Tell us more.."
+    x:Class="CastAway.Views.RegisterPage">
+	<ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20, 20, 20, 20">
+                <Label Text="We need some more information to serve you better..." />
+                <Image Source="place.jpeg" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="EntryName" 
+                    Placeholder="Name: " 
+                    Grid.Row="0" 
+                    Grid.ColumnSpan="2" />
+                    
+                    <Label x:Name="lblLanguage" 
+                    Text="Select your Language: " 
+                    Grid.Row="1" 
+                        Grid.ColumnSpan="2"  />
+                    
+                    <Picker x:Name="pickerLanguage" 
+                    Grid.Row="2" 
+                    Grid.ColumnSpan="2" />
+
+                    <Label x:Name="LabelCached" 
+                    Grid.Row="3" 
+
+                    Grid.ColumnSpan="2" />
+                    
+                    <Label x:Name="twitterHandle" 
+                    Grid.Row="4" 
+                    Grid.ColumnSpan="2"  />
+                    
+                    <Button x:Name="btnRegister" 
+                        Text="Register" 
+                        Grid.Row="5"
+                    Grid.ColumnSpan="2" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace CastAway.Views
 {
-    public class MessageListPage : BaseContentPage
+    public class MessageListPage : ContentPage
     {
         public MessageListPage()
         {

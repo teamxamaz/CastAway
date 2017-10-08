@@ -7,19 +7,10 @@ namespace CastAway
 {
 	public class App : Application
 	{
-		//static NavigationPage _NavigationPage;
 		public static UserDetails User;
-        public static MessageListPage _MessageList;
-
-		//public static Page GetMainPage()
-		//{
-		//	_MessageList = _MessageList ?? new MessageListPage();
-		//	_NavigationPage = new NavigationPage(_MessageList);
-		//	return _NavigationPage;
-		//}
 		public App ()
 		{
-            MainPage= new NavigationPage(new AuthPage()); //GetMainPage() ;
+            MainPage= new NavigationPage(new AuthPage()); 
 		}
 
 		public static Action SuccessfulLoginAction
@@ -28,11 +19,7 @@ namespace CastAway
 			{
 				return new Action(() =>
 				{
-                    //_NavigationPage.Navigation.PopToRootAsync();
-                    
-                    //_NavigationPage.Navigation.PushModalAsync(_MessageList);
-
-                    Application.Current.MainPage = new NavigationPage(new AuthPage());
+                    Application.Current.MainPage = new NavigationPage(new RegisterPage());
 				});
 			}
 		}

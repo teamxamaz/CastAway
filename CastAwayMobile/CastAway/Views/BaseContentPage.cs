@@ -12,7 +12,7 @@ namespace CastAway.Views
 
 			if (App.User == null)
 			{
-				Navigation.PushModalAsync(new LoginPage());
+				//Navigation.PushModalAsync(new LoginPage());
 			}
 		}
     }

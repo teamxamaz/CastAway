@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="CastAway.Views.MainMenu"
+    Padding="5">
+	<ContentPage.Content>
+        <ScrollView>
+        <Grid RowSpacing="5"
+            ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="250"/>
+                 </Grid.RowDefinitions>
+                 <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                <Frame
+                    BackgroundColor="#333"
+                    Grid.Row="0"
+                    Grid.Column="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapSlangs"
+                            NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="translate.png"/>
+                        <Label FontSize="Large" TextColor="Goldenrod" FontAttributes="Bold"  HorizontalTextAlignment="Center" Text="Frequent Slangs"/>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame
+                    BackgroundColor="#333"
+                    Grid.Row="0"
+                    Grid.Column="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapImageTrans"
+                            NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="translate.png"/>
+                        <Label FontSize="Large" TextColor="Goldenrod" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Image Translator"/>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame
+                    BackgroundColor="#333"
+                    Grid.Row="1"
+                    Grid.Column="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapCustomTrans"
+                            NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="translate.png"/>
+                        <Label FontSize="Large" TextColor="Goldenrod" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Custom Translate"/>
+                    </StackLayout>
+                </Frame>
+                <Frame
+                    BackgroundColor="#333"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapMyPeople"
+                            NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="translate.png"/>
+                        <Label FontSize="Large" TextColor="Goldenrod" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="My People"/>
+                    </StackLayout>
+                </Frame>
+                <Frame
+                    BackgroundColor="#333"
+                    Grid.Row="2"
+                    Grid.Column="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapProfile"
+                            NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="translate.png"/>
+                        <Label FontSize="Large" TextColor="Goldenrod" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="My Profile"/>
+                    </StackLayout>
+                </Frame>
+                <Frame
+                    BackgroundColor="#333"
+                    Grid.Row="2"
+                    Grid.Column="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapICanHelp"
+                            NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="translate.png"/>
+                        <Label FontSize="Large" TextColor="Goldenrod" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="I Can Help"/>
+                    </StackLayout>
+                </Frame>
+        </Grid>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -11,15 +11,13 @@ namespace CastAway.Views
         {
             InitializeComponent();
             AuthTwitter.Clicked +=OnAuthClicked;
+            Navigation.PushModalAsync(new LoginPage());
         }
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
             if (App.User != null)
                 twitterHandle.Text = App.User.ScreenName;
-            else
-                Navigation.PushModalAsync(new LoginPage());
-			
 		}
 		private void OnAuthClicked(object sender, EventArgs e)
 		{
